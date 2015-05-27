@@ -12,7 +12,7 @@ Use [Composer](http://getcomposer.org/) to install **PHP EyeCare** globally:
 ```shell
 composer global require "khanhicetea/php-eyecare"
 cd ~
-sudo ln -s `pwd`/.composer/vendor/php-eyecare/eyecare /usr/local/bin/eyecare
+sudo ln -s `pwd`/.composer/vendor/khanhicetea/php-eyecare/eyecare /usr/local/bin/eyecare
 sudo chmod +x /usr/local/bin/eyecare
 ```
 
