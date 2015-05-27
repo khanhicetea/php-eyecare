@@ -13,7 +13,12 @@ define('WORKING_TIME_SECONDS', 60 * 20);
 define('WORKING_MSG', 'OK ! Now you can get back to work ! :D');
 define('WORKING_ICON', __DIR__ . DS . 'icons' . DS . 'work.png');
 
-require __DIR__ . DS . 'vendor' . DS . 'autoload.php';
+if (is_readable(__DIR__ . DS . 'vendor' . DS . 'autoload.php')) {
+	require __DIR__ . DS . 'vendor' . DS . 'autoload.php';	
+} else {
+	require dirname(dirname(__DIR__)) . DS . 'autoload.php';	
+}
+
 
 use Joli\JoliNotif\Notification;
 use Joli\JoliNotif\NotifierFactory;
