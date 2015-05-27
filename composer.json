@@ -1,0 +1,20 @@
+{
+    "name": "khanhicetea/php-eyecare",
+    "description": "Protect your vision.",
+    "homepage": "https://github.com/khanhicetea/php-eyecare",
+    "license": "MIT",
+    "keywords": [
+        "eyecare", "notification", "health"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KhanhIceTea",
+            "email": "khanhicetea@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "jolicode/jolinotif": "~1.0"
+    }
+}

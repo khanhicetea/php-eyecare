@@ -1,0 +1,49 @@
+#!/usr/bin/env php
+<?php
+
+define('DS', DIRECTORY_SEPARATOR);
+
+define('APP_TITLE', 'PHP Eyecare');
+
+define('RELAXING_TIME_SECONDS', 20);
+define('RELAXING_MSG', 'Hey man ! You need taking a rest now ! :)');
+define('RELAXING_ICON', __DIR__ . DS . 'icons' . DS . 'relax.png');
+
+define('WORKING_TIME_SECONDS', 60 * 20);
+define('WORKING_MSG', 'OK ! Now you can get back to work ! :D');
+define('WORKING_ICON', __DIR__ . DS . 'icons' . DS . 'work.png');
+
+require __DIR__ . DS . 'vendor' . DS . 'autoload.php';
+
+use Joli\JoliNotif\Notification;
+use Joli\JoliNotif\NotifierFactory;
+
+$notifier = NotifierFactory::create();
+
+if ($notifier) {
+    while (true) {
+    	// Working time
+    	sleep(WORKING_TIME_SECONDS);
+
+    	// Take a rest !!!
+    	$notification =
+	        (new Notification())
+	        ->setTitle(APP_TITLE)
+	        ->setBody(RELAXING_MSG)
+	        ->setIcon(RELAXING_ICON)
+	    ;
+	    $notifier->send($notification);
+
+	    // Relaxing time
+	    sleep(RELAXING_TIME_SECONDS);
+	    
+	    // Get back to work !!!
+    	$notification =
+	        (new Notification())
+	        ->setTitle(APP_TITLE)
+	        ->setBody(WORKING_MSG)
+	        ->setIcon(WORKING_ICON)
+	    ;
+	    $notifier->send($notification);
+    }
+}
