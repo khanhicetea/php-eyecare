@@ -10,7 +10,7 @@ PHP Eyecare is tiny tool that helps you protect your eyes by [20 20 20 rule](htt
 Use [Composer](http://getcomposer.org/) to install **PHP EyeCare** globally:
 
 ```shell
-composer require "khanhicetea/php-eyecare"
+composer global require "khanhicetea/php-eyecare"
 cd ~
 sudo ln -s `pwd`/.composer/vendor/php-eyecare/eyecare /usr/local/bin/eyecare
 sudo chmod +x /usr/local/bin/eyecare
