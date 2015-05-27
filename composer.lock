@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9648936249be25ad091dd564b55da066",
+    "hash": "3ea23c6fc91c216725a9d5e8f0fcfdc2",
     "packages": [
         {
             "name": "jolicode/jolinotif",
@@ -112,7 +112,7 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,

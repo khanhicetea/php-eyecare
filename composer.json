@@ -1,4 +1,5 @@
 {
+    "minimum-stability": "dev",
     "name": "khanhicetea/php-eyecare",
     "description": "Protect your vision.",
     "homepage": "https://github.com/khanhicetea/php-eyecare",
